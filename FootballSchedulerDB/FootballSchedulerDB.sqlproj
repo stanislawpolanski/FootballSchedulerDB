@@ -60,6 +60,6 @@
     <Folder Include="docs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="docs\Roadmap.md" />
+    <None Include="docs\Sketch.md" />
   </ItemGroup>
 </Project>
