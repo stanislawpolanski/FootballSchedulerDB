@@ -7,4 +7,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[Name_Unique]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="97c40cca-a901-4560-ab4f-db12eb6223e3" ChangeDateTime="06/22/2018 19:50:10">
+    <Property Name="ElementName" Value="[dbo].[FK_Teams_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Teams]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Teams_To_Districts]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="97095ff9-90d1-4460-ae2c-84f8570c9cec" ChangeDateTime="06/22/2018 19:50:25">
+    <Property Name="ElementName" Value="[dbo].[Teams].[District]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Teams]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DistrictId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="868a65c9-2c4d-4ca0-bc13-73cbd9278f69" ChangeDateTime="06/22/2018 19:55:56">
+    <Property Name="ElementName" Value="[dbo].[FK_Matches_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Matches]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Matches_AwayTeam_To_Teams]" />
+  </Operation>
 </Operations>
