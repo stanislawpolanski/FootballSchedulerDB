@@ -58,8 +58,15 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="docs" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
     <None Include="docs\Sketch.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Districts.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="FootballSchedulerDB.refactorlog" />
   </ItemGroup>
 </Project>
