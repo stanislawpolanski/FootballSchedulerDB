@@ -28,4 +28,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_Matches_AwayTeam_To_Teams]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="90f81db0-b674-44a9-ae78-3a3d4abe66cd" ChangeDateTime="07/01/2018 20:25:02">
+    <Property Name="ElementName" Value="[dbo].[Matches].[Date]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Matches]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TimeOfPlay" />
+  </Operation>
 </Operations>

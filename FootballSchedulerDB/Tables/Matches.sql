@@ -2,7 +2,7 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [LeagueId] INT NOT NULL, 
-    [Date] DATETIME NOT NULL, 
+    [TimeOfPlay] DATETIME NOT NULL, 
     [HomeTeamId] INT NOT NULL, 
     [AwayTeamId] INT NOT NULL, 
     [HomeScore] INT NULL, 
