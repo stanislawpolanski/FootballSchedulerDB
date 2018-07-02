@@ -59,6 +59,8 @@
     <Folder Include="Properties" />
     <Folder Include="docs" />
     <Folder Include="Tables" />
+    <Folder Include="Functions" />
+    <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
     <None Include="docs\Sketch.md" />
@@ -68,6 +70,8 @@
     <Build Include="Tables\Leagues.sql" />
     <Build Include="Tables\Teams.sql" />
     <Build Include="Tables\Matches.sql" />
+    <Build Include="Functions\GetMatchesByLeagueId.sql" />
+    <Build Include="Views\GetLeaguePlayYears.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="FootballSchedulerDB.refactorlog" />
