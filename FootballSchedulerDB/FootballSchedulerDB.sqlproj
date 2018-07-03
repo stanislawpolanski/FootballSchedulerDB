@@ -72,6 +72,7 @@
     <Build Include="Tables\Matches.sql" />
     <Build Include="Functions\GetMatchesByLeagueId.sql" />
     <Build Include="Views\GetLeaguePlayYears.sql" />
+    <Build Include="Functions\GetLeagueStandingsByLeagueId.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="FootballSchedulerDB.refactorlog" />
