@@ -1,23 +1,13 @@
 ﻿CREATE FUNCTION [dbo].[GetLeagueStandingsByLeagueId]
 (
-	@param1 int,
-	@param2 char(5)
+	@LeagueId int
 )
-RETURNS @returntable TABLE
-(
-	c1 int,
-	c2 char(5)
-)
+RETURNS TABLE
 AS
-BEGIN
-	INSERT @returntable
-	SELECT @param1, @param2
-	RETURN
-END
 
--- bottom as a function, use where LeagueId = @param
-
-select
+RETURN
+(
+	select
 	Player,
 	dbo.Teams.Name as TeamName,
 	count(Player) as Played,
@@ -40,7 +30,7 @@ from
 		case when HomeScore < AwayScore then 1 else 0 end as loses
 
 		from dbo.Matches
-		where HomeScore is not null
+		where HomeScore is not null and dbo.Matches.LeagueId = @LeagueId
 	union all
 	select 
 		AwayTeamId as Player, 
@@ -51,8 +41,9 @@ from
 		case when HomeScore > AwayScore then 1 else 0 end as loses
 
 		from dbo.Matches
-		where AwayScore is not null
+		where AwayScore is not null and dbo.Matches.LeagueId = @LeagueId
 ) as teamsResults
 left join dbo.Teams on Player = dbo.Teams.Id
 group by Player, dbo.Teams.Name
-order by Points desc, GoalsDifference desc, Player
+	--order by Points desc, GoalsDifference desc, GoalsFor desc, Player
+)
