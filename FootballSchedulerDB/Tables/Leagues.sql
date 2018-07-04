@@ -1,6 +1,5 @@
 ﻿CREATE TABLE [dbo].[Leagues]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [Name] VARCHAR(50) NOT NULL, 
-    [StartDate] DATE NOT NULL
+    [Name] VARCHAR(50) NOT NULL 
 )

@@ -60,7 +60,6 @@
     <Folder Include="docs" />
     <Folder Include="Tables" />
     <Folder Include="Functions" />
-    <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
     <None Include="docs\Sketch.md" />
@@ -71,7 +70,6 @@
     <Build Include="Tables\Teams.sql" />
     <Build Include="Tables\Matches.sql" />
     <Build Include="Functions\GetMatchesByLeagueId.sql" />
-    <Build Include="Views\GetLeaguePlayYears.sql" />
     <Build Include="Functions\GetLeagueStandingsByLeagueId.sql" />
   </ItemGroup>
   <ItemGroup>
