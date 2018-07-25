@@ -44,15 +44,19 @@ merge into dbo.Districts
 	using @DistrictsSeed
 	on ([@DistrictsSeed].Id = dbo.Districts.Id)
 
-	when matched and (dbo.Districts.Name <> [@DistrictsSeed].Name
-	or dbo.Districts.ParentId <> [@DistrictsSeed].ParentId)
+	when matched and ((dbo.Districts.Name <> [@DistrictsSeed].Name) or (dbo.Districts.ParentId <> [@DistrictsSeed].ParentId))
 	then
-		update set dbo.Districts.Name = [@DistrictsSeed].Name,
-		dbo.Districts.ParentId = [@DistrictsSeed].ParentId
+		update set 
+			dbo.Districts.Name = [@DistrictsSeed].Name,
+			dbo.Districts.ParentId = [@DistrictsSeed].ParentId
 
 	when not matched then
-		insert (Id, Name, ParentId) values ([@DistrictsSeed].Id,
-		[@DistrictsSeed].Name, [@DistrictsSeed].ParentId)
+		insert (Id, Name, ParentId) values 
+		(
+			[@DistrictsSeed].Id,
+			[@DistrictsSeed].Name,
+			[@DistrictsSeed].ParentId
+		)
 ;
 
 set identity_insert dbo.Districts off
@@ -516,15 +520,19 @@ merge into dbo.Teams
 	using @TeamsSeed
 	on ([@TeamsSeed].Id = dbo.Teams.Id)
 
-	when matched and (dbo.Teams.Name <> [@TeamsSeed].Name
-	or dbo.Teams.DistrictId <> [@TeamsSeed].DistrictId)
+	when matched and ((dbo.Teams.Name <> [@TeamsSeed].Name) or (dbo.Teams.DistrictId <> [@TeamsSeed].DistrictId))
 	then
-		update set dbo.Teams.Name = [@TeamsSeed].Name,
-		dbo.Teams.DistrictId = [@TeamsSeed].DistrictId
+		update set 
+			dbo.Teams.Name = [@TeamsSeed].Name,
+			dbo.Teams.DistrictId = [@TeamsSeed].DistrictId
 
 	when not matched then
-		insert (Id, Name, DistrictId) values ([@TeamsSeed].Id,
-		[@TeamsSeed].Name, [@TeamsSeed].DistrictId)
+		insert (Id, Name, DistrictId) values 
+		(
+			[@TeamsSeed].Id,
+			[@TeamsSeed].Name,
+			[@TeamsSeed].DistrictId
+		)
 ;
 
 set identity_insert dbo.Teams off
