@@ -204,7 +204,6 @@ insert into @TeamsSeed values
 	(129, 'Stal Chocianów', 1), 
 	(130, 'Odra Ścinawa', 1), 
 	(131, 'Sudety Giebułtów', 1), 
-	(132, 'Karkonosze Jelenia Góra', 1), 
 	(133, 'Olimpia Kowary', 1), 
 	(134, 'Włókniarz Mirsk', 1), 
 	(135, 'Sokół Marcinkowice', 1), 
@@ -277,7 +276,6 @@ insert into @TeamsSeed values
 	(202, 'KS Wiązownica', 9), 
 	(203, 'Start Otwock', 7), 
 	(204, 'KS Kutno', 5), 
-	(205, 'Orkan Rumia', 11), 
 	(206, 'Granat Skarżysko-Kamienna', 11), 
 	(207, 'RKS Radomsko', 5), 
 	(208, 'Odra Wodzisław Śląski', 12), 
@@ -287,7 +285,6 @@ insert into @TeamsSeed values
 	(212, 'Unia Racibórz', 12), 
 	(213, 'Silesia Piekary Śląskie', 12), 
 	(214, 'Boruta Zgierz', 5), 
-	(215, 'Sarmacja Będzin', 12), 
 	(216, 'Wisła Tczew', 11), 
 	(217, 'MKS Żory', 12), 
 	(218, 'Chemik Kędzierzyn-Koźle', 8), 
@@ -295,7 +292,6 @@ insert into @TeamsSeed values
 	(220, 'Włókniarz Pabianice', 5), 
 	(221, 'Siemianowiczanka Siemianowice Śląskie', 12), 
 	(222, 'Orzeł Piła', 15), 
-	(223, 'Cuiavia Inowrocław', 2), 
 	(224, 'Górnik 09 Mysłowice', 12), 
 	(225, 'Polonia Piotrków Trybunalski', 5), 
 	(226, 'Karkonosze Jelenia Góra', 1), 
@@ -345,10 +341,8 @@ insert into @TeamsSeed values
 	(270, 'Włókniarz Zelów', 5), 
 	(271, 'KS Paradyż', 5), 
 	(272, 'Stal Niewiadów', 5), 
-	(273, 'KS Kutno', 5), 
 	(274, 'Orkan Buczek', 5), 
 	(275, 'Ceramika Opoczno', 5), 
-	(276, 'Boruta Zgierz', 5), 
 	(277, 'Pilica Przedbórz', 5), 
 	(278, 'Zawisza Pajęczno', 5), 
 	(279, 'Zjednoczeni Bełchatów', 5), 
@@ -383,7 +377,6 @@ insert into @TeamsSeed values
 	(308, 'LZS Gronowice', 8), 
 	(309, 'KS Krasiejów', 8), 
 	(310, 'LZS Kup', 8), 
-	(311, 'KS Wiązownica', 9), 
 	(312, 'Wisłok Wiśniowa', 9), 
 	(313, 'Igloopol Dębica', 9), 
 	(314, 'LKS Pisarowce', 9), 
@@ -506,8 +499,7 @@ insert into @TeamsSeed values
 	(431, 'Grom Plewiska', 15), 
 	(432, 'Ostrovia 1909 Ostrów Wielkopolski', 15), 
 	(433, 'LKS Gołuchów', 15), 
-	(434, 'Pogoń Nowe Skalmierzyce', 15), 
-	(435, 'Polonia 1912 Leszno', 15)
+	(434, 'Pogoń Nowe Skalmierzyce', 15)
 ;
 
 -- Merge temporary teams table into database
