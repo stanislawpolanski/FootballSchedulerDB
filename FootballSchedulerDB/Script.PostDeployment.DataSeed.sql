@@ -493,7 +493,7 @@ insert into @TeamsSeed values
 	(418, 'Gryf Polanów', 16), 
 	(419, 'Leśnik Manowo', 16), 
 	(420, 'Rasel Dygowo', 16), 
-	(421, 'Hutnik Szczecin', 16), 
+	(421, 'Tur 1921 Turek', 15), --this region is ok!
 	(422, 'Olimp Gościno', 16), 
 	(423, 'Sparta Węgorzyno', 16), 
 	(424, 'Jeziorak Załom (Szczecin)', 16), 
@@ -507,8 +507,7 @@ insert into @TeamsSeed values
 	(432, 'Ostrovia 1909 Ostrów Wielkopolski', 15), 
 	(433, 'LKS Gołuchów', 15), 
 	(434, 'Pogoń Nowe Skalmierzyce', 15), 
-	(435, 'Polonia 1912 Leszno', 15), 
-	(436, 'Tur 1921 Turek', 15)
+	(435, 'Polonia 1912 Leszno', 15)
 ;
 
 -- Merge temporary teams table into database
